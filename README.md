@@ -10,7 +10,7 @@ This bot is designed to run on Linux in a Docker container. It uses the Bot Buil
 ### Requirements
 * [Docker](https://www.docker.com/products/docker-desktop)
 * [Bot Registration](https://dev.botframework.com/bots/new)
-* [Bot Framework Emulator]('https://github.com/Microsoft/BotFramework-Emulator/releases')
+* [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases)
 
 
 ## Usage
