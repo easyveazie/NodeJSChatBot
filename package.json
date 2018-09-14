@@ -1,0 +1,19 @@
+{
+  "name": "hello-chatconnector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.13.1",
+    "dotenv": "^6.0.0",
+    "restify": "^5.0.0"
+  },
+  "devDependencies": {
+    "zip-folder": "^1.0.0"
+  }
+}
