@@ -14,15 +14,15 @@ var connector = new builder.ChatConnector({
     appPassword: process.env.MicrosoftAppPassword
 });
 
+var bot = new builder.UniversalBot(connector, function (session, args) {
+    session.send('You reached the default message handler. You said \'%s\'.', session.message.text);
+});
+
 // Bot Storage: Here we register the state storage for your bot. 
 // Default store: volatile in-memory store - Only for prototyping!
 // We provide adapters for Azure Table, CosmosDb, SQL Azure, or you can implement your own!
 // For samples and documentation, see: https://github.com/Microsoft/BotBuilder-Azure
 var inMemoryStorage = new builder.MemoryBotStorage();
-
-var bot = new builder.UniversalBot(connector, function (session, args) {
-    session.send('You reached the default message handler. You said \'%s\'.', session.message.text);
-});
 
 bot.set('storage', inMemoryStorage)
 
@@ -34,7 +34,7 @@ bot.dialog('HelloWorld',
         session.endDialog();
     }
 ).triggerAction({
-    matches: 'Hello\sWorld'
+    matches: /hello\sworld/i
 })
 
 bot.dialog('GoodbyeWorld',
@@ -43,7 +43,7 @@ bot.dialog('GoodbyeWorld',
         session.endDialog();
     }
 ).triggerAction({
-    matches: 'Goodbye\sWorld'
+    matches: /goodbye\sworld/i
 })
 
 // Listen for messages from users 
