@@ -14,6 +14,6 @@ RUN npm install
 COPY src /app
 
 # You only need this for the bot Emulator. The bot does not need inbound ports when using in Teams/Slack.
-EXPOSE 3978
+# EXPOSE 3978 80
 
 CMD [ "node", "app.js" ]
