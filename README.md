@@ -1,3 +1,9 @@
+---
+
+# NOTE - this project has been moved [here](https://github.com/SkyNorth/NodeJSChatBot)
+
+---
+
 Sample NodeJS bot using Microsoft Bot Framework v3.
 
 <img src="https://bots.botframework.com/Client/Images/bot-framework-default-7.png" width="100" height="100" >
